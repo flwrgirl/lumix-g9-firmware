@@ -1,0 +1,45 @@
+{
+  "scope": "actual G9 routine execution in QEMU; no camera board or UI emulation",
+  "QEMU": "QEMU emulator version 11.1.0 (v11.1.0-12130-ge470268ff4)",
+  "machine": "none",
+  "CPU": "cortex-a7",
+  "fixture_RAM_bytes": 268435456,
+  "native_entry": "0x06baa33a",
+  "controls": [
+    {
+      "case": "embedded_release_font",
+      "native_return": 0,
+      "expected_return": 0
+    },
+    {
+      "case": "release_font_header_in_scratch",
+      "native_return": 0,
+      "expected_return": 0
+    },
+    {
+      "case": "synthetic_BDF_type_control",
+      "native_return": 1,
+      "expected_return": 1
+    },
+    {
+      "case": "synthetic_unknown_type_control",
+      "native_return": 4,
+      "expected_return": 4
+    },
+    {
+      "case": "short_length_control",
+      "native_return": 4,
+      "expected_return": 4
+    }
+  ],
+  "all_expected_results_observed": true,
+  "core_callee_saved_registers_and_SP_preserved": true,
+  "probed_code_bytes_unchanged": true,
+  "camera_accessed": false,
+  "host_devices_attached": false,
+  "network_attached": false,
+  "display_controller_emulated": false,
+  "camera_booted": false,
+  "original_framebuffer_produced": false,
+  "native_window_requested": false
+}

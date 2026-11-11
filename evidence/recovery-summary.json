@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "model": "Panasonic Lumix DC-G9",
+  "firmware_version": "2.7",
+  "internal_model_id": "MC471",
+  "sample": {
+    "zip_filename": "G9___V27.zip",
+    "zip_bytes": 81685592,
+    "zip_sha256": "5fd2f5c212b5101dd25171e53cdb435b450db1869cf86a00aebe238c7b84445d",
+    "bin_filename": "G9___V27.bin",
+    "bin_bytes": 81952256,
+    "bin_sha256": "9316958735c19fa0a04415c75faf97edff9be042a42c115ac1622d6c6379e7c3",
+    "official_download_page": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/fts/dl/g9.html"
+  },
+  "results": {
+    "components": 49,
+    "encrypted_components": 45,
+    "all_plaintext_component_hashes_match": true,
+    "original_zip_unchanged": true,
+    "camera_write_or_flash_operations": 0
+  },
+  "physical_control": {
+    "component": "loader3",
+    "cpu_address": "0x00000000",
+    "bytes": 49152,
+    "sha256": "be158aec37e74a3d528304f583eea42144bcc0365a8ef7a7f76ce811d9950f95",
+    "matches_complete_component_sha256": true,
+    "word_block_prefix_matches": true,
+    "forward_reverse_blocks_match": true
+  },
+  "main_program": {
+    "cpu_base_address": "0x060a0000",
+    "key_file_offset": "0x009c8f10",
+    "key_cpu_address": "0x06a68f10",
+    "decompilation": {
+      "ghidra_version": "12.2",
+      "language": "ARM:LE:32:v7",
+      "functions_found": 24628,
+      "functions_decompiled": 24627,
+      "functions_incomplete": 1,
+      "functions_with_warnings": 832,
+      "single_large_function_retry": {
+        "entry": "0618013c",
+        "completed": false,
+        "warnings": false,
+        "timeout_seconds": 120
+      }
+    }
+  },
+  "loader3_decompilation": {
+    "ghidra_version": "12.2",
+    "language": "ARM:LE:32:v7",
+    "functions_found": 123,
+    "functions_decompiled": 123,
+    "functions_incomplete": 0,
+    "functions_with_warnings": 17
+  },
+  "filesystem_inventory": {
+    "regular_files": 544,
+    "readable_text_files": 107,
+    "ELF_files": 416
+  },
+  "limits": [
+    "Hashes pin the tested sample; they are not described as hashes independently published by Panasonic.",
+    "Decompilation names, types and function boundaries are inferred.",
+    "No accepted modified update, signature bypass or hard-brick recovery route is established.",
+    "No raw camera captures, calibration exports, vendor firmware or decompiled vendor files are included in this repository."
+  ]
+}

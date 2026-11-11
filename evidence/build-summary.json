@@ -1,0 +1,135 @@
+{
+  "status": "standalone ARM and Thumb controls compile and pass emulation; complete firmware rebuild unavailable",
+  "toolchain": {
+    "version": "0.17.1",
+    "platform": "x86_64-windows",
+    "official_download": "https://ziglang.org/download/0.17.1/zig-x86_64-windows-0.17.1.zip",
+    "archive_bytes": 100343666,
+    "archive_sha256": "b03f477a1943673e02aca0f570e8030dffd536ce1f45cbc4d3326ec31159562e",
+    "matches_official_index": true,
+    "compiler_directory": "zig-x86_64-windows-0.17.1"
+  },
+  "build": {
+    "scope": "standalone offline compiler control; not firmware",
+    "zig": "0.17.1",
+    "compiler": "clang version 22.1.8",
+    "CPU": "cortex-a7",
+    "float_ABI": "soft",
+    "linked_address_is_emulator_only": true,
+    "source_SHA256": "3df61d63661bb173e091ae69d8f95363f4d041612647be0911f3680faad0b6cd",
+    "linker_script_SHA256": "436a1fa12c8a90d16cd37187631838c6e3f8efee1ae7041cfb8eb16e2cd5dbe1",
+    "artifacts": [
+      {
+        "ELF_class": 32,
+        "endian": "little",
+        "machine": "ARM",
+        "EABI": 5,
+        "entry": "0x10000",
+        "text_address": "0x10000",
+        "mode": "arm",
+        "text_bytes": 12,
+        "text_SHA256": "e8e005c8474860cc04a87c883920989c1271eb0540a01cac07bd093b358cd15f",
+        "ELF_SHA256": "77a903271480b6e9f2e9e1fe5d07061d20dbfc556f4ab9396a5b9b765fb8bf29"
+      },
+      {
+        "ELF_class": 32,
+        "endian": "little",
+        "machine": "ARM",
+        "EABI": 5,
+        "entry": "0x10001",
+        "text_address": "0x10000",
+        "mode": "thumb",
+        "text_bytes": 8,
+        "text_SHA256": "3ee72fdad02045dbb1f170e8ab8210ae47123945e05e3b21bc4268e05acc811a",
+        "ELF_SHA256": "b40dc7e204701c600313ff7b4970f70af7b0b674ebea29f3eea72e0a78680e47"
+      }
+    ]
+  },
+  "emulation": {
+    "scope": "isolated integer control; not whole-camera emulation",
+    "artifacts": [
+      {
+        "ELF_class": 32,
+        "endian": "little",
+        "machine": "ARM",
+        "EABI": 5,
+        "entry": "0x10000",
+        "text_address": "0x10000",
+        "mode": "arm",
+        "text_bytes": 12,
+        "text_SHA256": "e8e005c8474860cc04a87c883920989c1271eb0540a01cac07bd093b358cd15f",
+        "cases": 1285,
+        "all_results_match": true,
+        "callee_saved_registers_preserved": true,
+        "no_stack_or_hardware_memory_access": true,
+        "unicorn": "2.1.4",
+        "results_SHA256": "014c236164d0f7d147be4fe979fad35e0c22931bdbb8d31346e383f8304fa82b"
+      },
+      {
+        "ELF_class": 32,
+        "endian": "little",
+        "machine": "ARM",
+        "EABI": 5,
+        "entry": "0x10001",
+        "text_address": "0x10000",
+        "mode": "thumb",
+        "text_bytes": 8,
+        "text_SHA256": "3ee72fdad02045dbb1f170e8ab8210ae47123945e05e3b21bc4268e05acc811a",
+        "cases": 1285,
+        "all_results_match": true,
+        "callee_saved_registers_preserved": true,
+        "no_stack_or_hardware_memory_access": true,
+        "unicorn": "2.1.4",
+        "results_SHA256": "014c236164d0f7d147be4fe979fad35e0c22931bdbb8d31346e383f8304fa82b"
+      }
+    ],
+    "recovered_leaf_comparison": {
+      "cases": 1285,
+      "all_results_match": true,
+      "callee_saved_registers_preserved": true,
+      "no_stack_or_hardware_memory_access": true,
+      "unicorn": "2.1.4",
+      "results_SHA256": "014c236164d0f7d147be4fe979fad35e0c22931bdbb8d31346e383f8304fa82b",
+      "component": "program",
+      "address": "0x6500e7e",
+      "component_offset": "0x460e7e",
+      "bytes": 8,
+      "routine_SHA256": "6bd23bca9701848a50fff2c0ea8a3f90fcde10c27e9294a5e279b58d357a95ae",
+      "results_match_ARM_and_Thumb_controls": true
+    }
+  },
+  "firmware_evidence": {
+    "ELF_count": 416,
+    "machines": {
+      "40": 416
+    },
+    "ELF_flags": {
+      "0x5000200": 349,
+      "0x5000000": 63,
+      "0x5000202": 4
+    },
+    "compiler_comments": {
+      "GCC: (Buildroot 2017.02-svn195143) 4.8.5": 247,
+      "GCC: (Sourcery CodeBench Lite 2014.05-29) 4.8.3 20140320 (prerelease)": 5,
+      "GCC: (Buildroot 2017.02) 4.8.5": 8
+    },
+    "interpreters": {
+      "/lib/ld-linux.so.3": 101
+    },
+    "kernel_vermagic": {
+      "vermagic=3.18.18 SMP mod_unload ARMv7 ": 63
+    },
+    "main_program_markers": [
+      {
+        "offset": "0x9c8e78",
+        "text": "ThreadX SMP/Cortex-A7/RVDS Version G5.6.1.5.1 / v2.0rel2.6"
+      }
+    ]
+  },
+  "unit_tests_passed": 13,
+  "limits": [
+    "No complete vendor source tree, SDK, headers, libraries or linker/scatter layout recovered.",
+    "Only the tested isolated routine semantics were compared; not exhaustive equivalence.",
+    "No image repack, signature bypass, modified-update acceptance, firmware write or flash."
+  ]
+}

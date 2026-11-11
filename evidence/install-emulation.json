@@ -1,0 +1,566 @@
+{
+  "scope": "native install decisions with modeled environment/logical storage; not complete hardware",
+  "input_BIN_SHA256": "9316958735c19fa0a04415c75faf97edff9be042a42c115ac1622d6c6379e7c3",
+  "cases": [
+    {
+      "case": "original_bootstrap_request_blocked",
+      "native_return": null,
+      "controlled_stop": "protected_write_request",
+      "native_visits": {
+        "progress": 863,
+        "directory_SHA256": 1,
+        "SHA256_finalize": 50,
+        "ECDSA": 1
+      },
+      "emulated_RAM_policy_zero_fixture": false,
+      "older_version_and_peripheral_readiness_are_fixtures": true,
+      "environment_calls": [
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x0"
+          ]
+        },
+        {
+          "service": "cache_and_OS_fixture",
+          "address": "0x646a8a0",
+          "arguments": [
+            "0x39",
+            "0x0",
+            "0x0",
+            "0x0"
+          ]
+        },
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x32"
+          ]
+        },
+        {
+          "service": "peripheral_pause_fixture",
+          "address": "0x6295ff4",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x32"
+          ]
+        },
+        {
+          "service": "calibration_merge_fixture",
+          "address": "0x6233d34",
+          "arguments": [
+            "0xb17d5600",
+            "0x1",
+            "0x4",
+            "0x0"
+          ]
+        },
+        {
+          "service": "calibration_merge_fixture",
+          "address": "0x6233d34",
+          "arguments": [
+            "0xb17f5600",
+            "0x1",
+            "0x4",
+            "0x0"
+          ]
+        },
+        {
+          "service": "activation_merge_fixture",
+          "address": "0x6233fc4",
+          "arguments": [
+            "0xb2dd5600",
+            "0x4",
+            "0x61",
+            "0x61"
+          ]
+        },
+        {
+          "service": "activation_merge_fixture",
+          "address": "0x6233fc4",
+          "arguments": [
+            "0xb2dd5e00",
+            "0x4",
+            "0x62",
+            "0x62"
+          ]
+        },
+        {
+          "service": "charger_preflight_ready_fixture",
+          "address": "0x622d5e2",
+          "arguments": [
+            "0x201efe80",
+            "0x31",
+            "0x635f7268",
+            "0x5f706565"
+          ]
+        },
+        {
+          "service": "protected_bootstrap_program_request",
+          "address": "0x64511dc",
+          "arguments": [
+            "0x1",
+            "0x1000",
+            "0x11800",
+            "0xb0001600"
+          ],
+          "stack_arguments": [
+            "0xb0002600",
+            "0x72"
+          ],
+          "bootloader_payloads": [
+            {
+              "name": "loader1",
+              "bytes": 4096,
+              "matches_unchanged_release": true
+            },
+            {
+              "name": "loader2",
+              "bytes": 22528,
+              "matches_unchanged_release": true
+            },
+            {
+              "name": "loader3",
+              "bytes": 49152,
+              "matches_unchanged_release": true
+            }
+          ]
+        }
+      ],
+      "storage": {
+        "model": "logical slots; physical partition/erase behavior unverified",
+        "protected_region_canaries_intact": true,
+        "program_SHA256": "6c63dcc36a82d3b9391600fab0e6025f0ee72fac44384b0a2d0e235dd56b0198",
+        "program_matches_candidate": null,
+        "sectors_written": 0,
+        "events": [
+          {
+            "operation": "protected_write_blocked",
+            "region": "bootloaders"
+          }
+        ],
+        "boot_or_recovery_emulated": false
+      },
+      "cryptographic_and_decoder_stubs": false,
+      "unmapped_accesses": 0,
+      "physical_partition_mapping_verified": false,
+      "recovery_path_tested": false
+    },
+    {
+      "case": "program_only_data_fixture",
+      "native_return": "0x0",
+      "controlled_stop": null,
+      "native_visits": {
+        "progress": 104
+      },
+      "emulated_RAM_policy_zero_fixture": true,
+      "older_version_and_peripheral_readiness_are_fixtures": true,
+      "environment_calls": [
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x0"
+          ]
+        },
+        {
+          "service": "cache_and_OS_fixture",
+          "address": "0x646a8a0",
+          "arguments": [
+            "0x39",
+            "0x0",
+            "0x0",
+            "0x0"
+          ]
+        },
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x32"
+          ]
+        },
+        {
+          "service": "peripheral_pause_fixture",
+          "address": "0x6295ff4",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x32"
+          ]
+        },
+        {
+          "service": "charger_preflight_ready_fixture",
+          "address": "0x622d5e2",
+          "arguments": [
+            "0x201efe80",
+            "0x1",
+            "0x6d6172",
+            "0x6d6172"
+          ]
+        },
+        {
+          "service": "logical_program_prepare",
+          "address": "0x6451116",
+          "arguments": [
+            "0x0",
+            "0x6e",
+            "0x6d6172",
+            "0x6d6172"
+          ],
+          "model_assumption": "prepare erases logical program slot; physical mapping unverified"
+        },
+        {
+          "service": "logical_program_write",
+          "address": "0x64512e6",
+          "arguments": [
+            "0x2000",
+            "0xb0001600",
+            "0x6d6172",
+            "0x6d6172"
+          ],
+          "payload_bytes": 8192,
+          "payload_SHA256": "deea9dc7152ae0621c5909852c1a33b1d8ea522abef8f4dc9e2a384781390b09"
+        },
+        {
+          "service": "delay_fixture",
+          "address": "0x63f68b4",
+          "arguments": [
+            "0x3e8",
+            "0x2",
+            "0x64",
+            "0x64"
+          ]
+        },
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x1",
+            "0x81cd406",
+            "0x64"
+          ]
+        },
+        {
+          "service": "cache_and_OS_fixture",
+          "address": "0x646a8a0",
+          "arguments": [
+            "0x39",
+            "0x1",
+            "0x81cd406",
+            "0x64"
+          ]
+        },
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x1",
+            "0x81cd406",
+            "0x64"
+          ]
+        }
+      ],
+      "storage": {
+        "model": "logical slots; physical partition/erase behavior unverified",
+        "protected_region_canaries_intact": true,
+        "program_SHA256": "deea9dc7152ae0621c5909852c1a33b1d8ea522abef8f4dc9e2a384781390b09",
+        "program_matches_candidate": true,
+        "sectors_written": 16,
+        "events": [
+          {
+            "operation": "prepare_program_modeled_as_erase",
+            "region": "program",
+            "raw_native_arguments": [
+              "0x0",
+              "0x6e"
+            ]
+          },
+          {
+            "operation": "program_write_completed",
+            "bytes": 8192,
+            "sectors_written": 16,
+            "SHA256": "deea9dc7152ae0621c5909852c1a33b1d8ea522abef8f4dc9e2a384781390b09"
+          }
+        ],
+        "boot_or_recovery_emulated": false
+      },
+      "cryptographic_and_decoder_stubs": false,
+      "unmapped_accesses": 0,
+      "physical_partition_mapping_verified": false,
+      "recovery_path_tested": false
+    },
+    {
+      "case": "program_write_error_fixture",
+      "native_return": "0x8000000c",
+      "controlled_stop": null,
+      "native_visits": {
+        "progress": 104
+      },
+      "emulated_RAM_policy_zero_fixture": true,
+      "older_version_and_peripheral_readiness_are_fixtures": true,
+      "environment_calls": [
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x0"
+          ]
+        },
+        {
+          "service": "cache_and_OS_fixture",
+          "address": "0x646a8a0",
+          "arguments": [
+            "0x39",
+            "0x0",
+            "0x0",
+            "0x0"
+          ]
+        },
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x32"
+          ]
+        },
+        {
+          "service": "peripheral_pause_fixture",
+          "address": "0x6295ff4",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x32"
+          ]
+        },
+        {
+          "service": "charger_preflight_ready_fixture",
+          "address": "0x622d5e2",
+          "arguments": [
+            "0x201efe80",
+            "0x1",
+            "0x6d6172",
+            "0x6d6172"
+          ]
+        },
+        {
+          "service": "logical_program_prepare",
+          "address": "0x6451116",
+          "arguments": [
+            "0x0",
+            "0x6e",
+            "0x6d6172",
+            "0x6d6172"
+          ],
+          "model_assumption": "prepare erases logical program slot; physical mapping unverified"
+        },
+        {
+          "service": "logical_program_write",
+          "address": "0x64512e6",
+          "arguments": [
+            "0x2000",
+            "0xb0001600",
+            "0x6d6172",
+            "0x6d6172"
+          ],
+          "payload_bytes": 8192,
+          "payload_SHA256": "deea9dc7152ae0621c5909852c1a33b1d8ea522abef8f4dc9e2a384781390b09"
+        },
+        {
+          "service": "cache_and_OS_fixture",
+          "address": "0x646a8a0",
+          "arguments": [
+            "0x39",
+            "0xb0001600",
+            "0x6d6172",
+            "0x6d6172"
+          ]
+        },
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x1",
+            "0x81cd406",
+            "0x6d6172"
+          ]
+        }
+      ],
+      "storage": {
+        "model": "logical slots; physical partition/erase behavior unverified",
+        "protected_region_canaries_intact": true,
+        "program_SHA256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+        "program_matches_candidate": false,
+        "sectors_written": 0,
+        "events": [
+          {
+            "operation": "prepare_program_modeled_as_erase",
+            "region": "program",
+            "raw_native_arguments": [
+              "0x0",
+              "0x6e"
+            ]
+          },
+          {
+            "operation": "injected_write_error",
+            "region": "program"
+          }
+        ],
+        "boot_or_recovery_emulated": false
+      },
+      "cryptographic_and_decoder_stubs": false,
+      "unmapped_accesses": 0,
+      "physical_partition_mapping_verified": false,
+      "recovery_path_tested": false
+    },
+    {
+      "case": "power_cut_after_two_sectors_fixture",
+      "native_return": null,
+      "controlled_stop": "simulated_power_cut",
+      "native_visits": {
+        "progress": 104
+      },
+      "emulated_RAM_policy_zero_fixture": true,
+      "older_version_and_peripheral_readiness_are_fixtures": true,
+      "environment_calls": [
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x0"
+          ]
+        },
+        {
+          "service": "cache_and_OS_fixture",
+          "address": "0x646a8a0",
+          "arguments": [
+            "0x39",
+            "0x0",
+            "0x0",
+            "0x0"
+          ]
+        },
+        {
+          "service": "board_status_fixture",
+          "address": "0x636a2c8",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x32"
+          ]
+        },
+        {
+          "service": "peripheral_pause_fixture",
+          "address": "0x6295ff4",
+          "arguments": [
+            "0x0",
+            "0x2",
+            "0x81cd406",
+            "0x32"
+          ]
+        },
+        {
+          "service": "charger_preflight_ready_fixture",
+          "address": "0x622d5e2",
+          "arguments": [
+            "0x201efe80",
+            "0x1",
+            "0x6d6172",
+            "0x6d6172"
+          ]
+        },
+        {
+          "service": "logical_program_prepare",
+          "address": "0x6451116",
+          "arguments": [
+            "0x0",
+            "0x6e",
+            "0x6d6172",
+            "0x6d6172"
+          ],
+          "model_assumption": "prepare erases logical program slot; physical mapping unverified"
+        },
+        {
+          "service": "logical_program_write",
+          "address": "0x64512e6",
+          "arguments": [
+            "0x2000",
+            "0xb0001600",
+            "0x6d6172",
+            "0x6d6172"
+          ],
+          "payload_bytes": 8192,
+          "payload_SHA256": "deea9dc7152ae0621c5909852c1a33b1d8ea522abef8f4dc9e2a384781390b09"
+        }
+      ],
+      "storage": {
+        "model": "logical slots; physical partition/erase behavior unverified",
+        "protected_region_canaries_intact": true,
+        "program_SHA256": "6940e8a01d3cb6d3260b83fe443eaa48fe18544dc1507fbe0058bd520e91c84c",
+        "program_matches_candidate": false,
+        "sectors_written": 2,
+        "events": [
+          {
+            "operation": "prepare_program_modeled_as_erase",
+            "region": "program",
+            "raw_native_arguments": [
+              "0x0",
+              "0x6e"
+            ]
+          },
+          {
+            "operation": "simulated_power_cut",
+            "sectors_written": 2
+          }
+        ],
+        "boot_or_recovery_emulated": false
+      },
+      "cryptographic_and_decoder_stubs": false,
+      "unmapped_accesses": 0,
+      "physical_partition_mapping_verified": false,
+      "recovery_path_tested": false
+    }
+  ],
+  "all_expected_results_observed": true,
+  "data_fixtures_are_nonbootable": true,
+  "modified_image_exported": false,
+  "camera_accessed": false,
+  "physical_modified_update_acceptance_or_recovery_established": false,
+  "tool_source_SHA256": {
+    "tools/g9_emulator.py": "a7e9fac8086226e851ea1d20f13f600a6b8da7f3f91bae62312ddb4dc087c3e6",
+    "tools/emulate_update_decoder.py": "c3504ea0c4bb015fe7f14dbd50eaee4db0c692de1e178dbeee0a785cb5af8922",
+    "tools/emulate_install_job.py": "eef36aaae865e741ede7f32b1cb1648c3299ed9f15b3082168e85607bb42ef6a",
+    "tools/virtual_flash.py": "bba450c28e438229c992644fc6c9f2895bc53f2295216dd8c6f9482a47121ef5"
+  }
+}

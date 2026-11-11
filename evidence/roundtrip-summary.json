@@ -1,0 +1,462 @@
+{
+  "scope": "unchanged release reconstruction only",
+  "bytes": 81952256,
+  "BIN_SHA256": "9316958735c19fa0a04415c75faf97edff9be042a42c115ac1622d6c6379e7c3",
+  "matches_pinned_original_byte_for_byte": true,
+  "components_reconstructed": 49,
+  "encrypted_components": 45,
+  "directory_entries_reconstructed": true,
+  "outer_CRC32_recomputed": true,
+  "authentication_field_preserved_unchanged": true,
+  "encoder_controls": {
+    "NIST_four_block_CBC": true,
+    "independent_five_round_vector": true,
+    "streaming_boundary_independent_decryption": true
+  },
+  "encoder_executable_SHA256": "51fe8b6c0220bdb8ce87fe4ad76946a7d4d7f2bf35be832139a560aaba4d18d7",
+  "components": [
+    {
+      "index": 0,
+      "name": "loader1",
+      "bytes": 4096,
+      "encrypted": true,
+      "plain_SHA256": "4913f493636ed435d185ca3e5bea7a49eec28195606c99845d38ec68d91ccc5b",
+      "stored_SHA256": "bdf172577c2de24fb5f96142026b9a1933bb5f43be83e7eb645fb4be8c7395e6",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 1,
+      "name": "loader2",
+      "bytes": 22528,
+      "encrypted": true,
+      "plain_SHA256": "12dc31cd77ac3f49bf04eca1265e67429dd992377d2ae5e4aa307c61060828f7",
+      "stored_SHA256": "cdb0184c9cb5628a55d62b8a9043fe017420adce2800224ff2e11bfb7522e2e5",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 2,
+      "name": "loader3",
+      "bytes": 49152,
+      "encrypted": true,
+      "plain_SHA256": "be158aec37e74a3d528304f583eea42144bcc0365a8ef7a7f76ce811d9950f95",
+      "stored_SHA256": "68a4af2c6c5e8781664da12842705ccf28882ab5873cd48569a9113b995dd49b",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 3,
+      "name": "program",
+      "bytes": 11534336,
+      "encrypted": true,
+      "plain_SHA256": "76e83497c7ae11d9b1e1fe56a3bf11be6931709667b454503e272d5e4f8dd324",
+      "stored_SHA256": "2e316f2d9b33c50a3bf9a3b3fb0f3d9217f51a76c92a70254e6081cb62f6eea6",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 4,
+      "name": "storage",
+      "bytes": 0,
+      "encrypted": false,
+      "plain_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 5,
+      "name": "postboot1",
+      "bytes": 4718592,
+      "encrypted": true,
+      "plain_SHA256": "ed4415ed268030e244bf357ec3c3d9e51d47fe91b89e02c975a07f57fbd3f969",
+      "stored_SHA256": "4a369abdfbc9d700d4a73a76cff8c023b665b60dabe8c04b818a65a2b6dd6cd3",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 6,
+      "name": "postboot2",
+      "bytes": 7602176,
+      "encrypted": true,
+      "plain_SHA256": "f275779294a4c62c8336a82c98c7ba00929500a163d5c4a06eba7e9136419f2c",
+      "stored_SHA256": "332aa2e63a526f6f935e074ee7a7e322a99d460696e7155e69e622bcddfe1b9d",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 7,
+      "name": "postboot3",
+      "bytes": 131072,
+      "encrypted": true,
+      "plain_SHA256": "3f9051b4d5a8687214d856cd7b7d00a7890da3d73af581455ac2133381c5eabf",
+      "stored_SHA256": "4f8eaa53d3876a328d4db42195ade03e8c7a8e3668930bf0ce4da042ecc0bede",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 8,
+      "name": "postboot4",
+      "bytes": 131072,
+      "encrypted": true,
+      "plain_SHA256": "a2d1ef6c5b7f70fdac663a4814e83fd5c321a2713500eef51e8435d34d56befe",
+      "stored_SHA256": "c165b68f07b4879dc8e259c4170d829bc83a049143a1fe997a48c94a4119d957",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 9,
+      "name": "postboot5",
+      "bytes": 786432,
+      "encrypted": true,
+      "plain_SHA256": "1a8eb34503ea1971d3a60c5aa2f7297a1e1bcc96245e085fbcf066dbdf24925b",
+      "stored_SHA256": "75791539e626a9962bb0fcbc44dda1098573ef4434d5635da7c1a86166d509e5",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 10,
+      "name": "dram_sleep",
+      "bytes": 6144,
+      "encrypted": true,
+      "plain_SHA256": "f5c3758092430b333d346dda8378bc2977a930b22df35372b68ba37c9e2b1c18",
+      "stored_SHA256": "69a9e0c70980aee70f1c6212464c137d9dec9db5f65ee7a4ec677da5a800f12d",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 11,
+      "name": "eep_ow_a",
+      "bytes": 131072,
+      "encrypted": true,
+      "plain_SHA256": "d7bbfc3cabca31995be05781d9eaf66fcef544e6a82e475af58d89deafbb2d69",
+      "stored_SHA256": "738d3a622fbaa750134ea5feb792c257de4927ba972e40140e6e47d5372b5b91",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 12,
+      "name": "eep_ow_b",
+      "bytes": 131072,
+      "encrypted": true,
+      "plain_SHA256": "d7bbfc3cabca31995be05781d9eaf66fcef544e6a82e475af58d89deafbb2d69",
+      "stored_SHA256": "6da8bad1fbe67eb2c5409af931e2cc5d198458c7b6383b2827060992ad7c4ea7",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 13,
+      "name": "eep_adj",
+      "bytes": 131072,
+      "encrypted": true,
+      "plain_SHA256": "77af98fb47e9ee8d3df997e3709b0ea1ff0c2c496069efc73d576942f711bb6d",
+      "stored_SHA256": "2bec45deb376ce308c8cf8ad0161e336e4c6e9d1da2ce0283f13fe0a94668f5d",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 14,
+      "name": "eep_fix",
+      "bytes": 131072,
+      "encrypted": true,
+      "plain_SHA256": "b562055108539ff80f6e6294e084cfc97b347205edf342e728ec6f12bee525fa",
+      "stored_SHA256": "0b5256a593d2119f5c8b13d9a357c0ab4b5fd7c1f75e16a0e5e9c3524f41f83d",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 15,
+      "name": "music",
+      "bytes": 3538944,
+      "encrypted": true,
+      "plain_SHA256": "5dcc34ae10f9d7be2150752d7fbf4e7bae58d585ea3b3eeff93e985cf557c723",
+      "stored_SHA256": "e4a6ed2340a6a6d414c84661fba877ecbacf3b5fb0daad386820de0019ff23ac",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 16,
+      "name": "osdover",
+      "bytes": 8912896,
+      "encrypted": true,
+      "plain_SHA256": "4e5cb123e1e41a9cd3a45b573f689e07c6e736ce2e781b04e7cee5ff3b3d56bc",
+      "stored_SHA256": "87ef8fb7f1271a7202563b6ec0cd92b7830a2244876e2d0c83033c4d02b4e8e8",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 17,
+      "name": "osddata",
+      "bytes": 9699328,
+      "encrypted": true,
+      "plain_SHA256": "7b7d362e928efc9a27a661e8e0963a5ef8a6d0da16d0ae2ae0556ea7006d4edf",
+      "stored_SHA256": "46e4c1cbf549278901650a109257eca0cc87451e53dbccec007b958d47ff9ffe",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 18,
+      "name": "koutei_kao",
+      "bytes": 114688,
+      "encrypted": true,
+      "plain_SHA256": "0fb19aef2e26fbb568abce93c300cb41b2754c6e309726c880fd11c2a1f7776d",
+      "stored_SHA256": "ae2c588719151132fdf8132a8269581e484de7831644f9de0811456616d54866",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 19,
+      "name": "avchd_info",
+      "bytes": 16384,
+      "encrypted": false,
+      "plain_SHA256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "stored_SHA256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 20,
+      "name": "eep_net_a",
+      "bytes": 131072,
+      "encrypted": false,
+      "plain_SHA256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+      "stored_SHA256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 21,
+      "name": "eep_net_b",
+      "bytes": 131072,
+      "encrypted": false,
+      "plain_SHA256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+      "stored_SHA256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 22,
+      "name": "eep_act_a",
+      "bytes": 2048,
+      "encrypted": true,
+      "plain_SHA256": "59aa79d1fdaa9ed58e3eb53b3bad24ca7301ad21fd2f967af4ec8a7c518ecf4a",
+      "stored_SHA256": "abd1ea729f0d06f8ef5cc4834d77247a763a50031073306f1c632df7ee5b893f",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 23,
+      "name": "eep_act_b",
+      "bytes": 2048,
+      "encrypted": true,
+      "plain_SHA256": "59aa79d1fdaa9ed58e3eb53b3bad24ca7301ad21fd2f967af4ec8a7c518ecf4a",
+      "stored_SHA256": "690803e001dafe222a2c8b6de1180cda8980fb760a05a268e989480a44c96835",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 24,
+      "name": "zboot",
+      "bytes": 2048,
+      "encrypted": true,
+      "plain_SHA256": "bee20cb8a85d855329a31b5612a3760fd035dd502f26472704fd91beb162ad8a",
+      "stored_SHA256": "1ec5cc4b5357ebdb639de2ca84c3e161cd742df3adbe245c0a9b0937c7dc6411",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 25,
+      "name": "dtb",
+      "bytes": 4096,
+      "encrypted": true,
+      "plain_SHA256": "01f4d1a19a2fc4a42b7638efd5bcfb892ddf3eb1e9a3fbad3b1168f3e939361a",
+      "stored_SHA256": "cb634165ba0d0aaf3c14122baa6663bd06e5f8621bac3c181268f3db9839dddd",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 26,
+      "name": "zimage",
+      "bytes": 2621440,
+      "encrypted": true,
+      "plain_SHA256": "011f69116a7a60d3091657c030808668d202d6ff744b022a7d124b8cb2998fd1",
+      "stored_SHA256": "44ad679097a304737c88da65fe14acfce1aced963c9f7edf68ad95f27e491c1a",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 27,
+      "name": "rootfs1",
+      "bytes": 4194304,
+      "encrypted": true,
+      "plain_SHA256": "a29410142a503df4487f0a0be5c41fd0228bf0be915a2fa20c71b0ef76db0354",
+      "stored_SHA256": "10ee3c106077daf4703c3b7d7bbec660b611009be1d8168636d5d4c0ccad03aa",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 28,
+      "name": "rootfs2",
+      "bytes": 12582912,
+      "encrypted": true,
+      "plain_SHA256": "eb662b6162c07bd5122dcb5e81fd8b0b3837e58d8e7e581ea9d95d4cca9e92a0",
+      "stored_SHA256": "a9cba3ecc374df9ff026fab7b2e10cdb7059f3067320a7b1f1d47d64027dec46",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 29,
+      "name": "apu0_data_i",
+      "bytes": 131072,
+      "encrypted": true,
+      "plain_SHA256": "6aca25d04ab5d9dc530b98cf1ddd41941c7ae4ed396b803c2e874a5bdb391691",
+      "stored_SHA256": "6b3609003420463f44116d28c88b3f9e56f48b5314bc66846b9e1cd13d2fbb5b",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 30,
+      "name": "apu0_data_e",
+      "bytes": 131072,
+      "encrypted": true,
+      "plain_SHA256": "28f8fd279d5eefc35dea4bba2277af3dfb632af3e1853dd0991b546a822b2285",
+      "stored_SHA256": "5c23b6171c6fc2b565059a1a79e283991cfd2371c1353db6b4202c6a740ec2cd",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 31,
+      "name": "apu0_code_i",
+      "bytes": 65536,
+      "encrypted": true,
+      "plain_SHA256": "19a400e55d8c6ccde637eff4299999ee79a66521301b8fdf276a75d8efcf610d",
+      "stored_SHA256": "e510c7ed0fc19e6944cf039b457f0eb5cb67cf6549205f50d208b0c3c577b2ee",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 32,
+      "name": "apu0_code_e",
+      "bytes": 65536,
+      "encrypted": true,
+      "plain_SHA256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+      "stored_SHA256": "6f85de4a21d60680285602be670eef2ff68e0b74416597e551a5d981fec2d878",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 33,
+      "name": "usbcharge",
+      "bytes": 131072,
+      "encrypted": true,
+      "plain_SHA256": "89c6d82027f8ff8a9305b22dbb25491b2d94a540331a01e8cda17b5c0b558a78",
+      "stored_SHA256": "7c0a3f95bd102023ac79a1019ad1c5d6f7e4e566bdf2f0d15d13fcbf1dfb0c20",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 34,
+      "name": "ipu_data",
+      "bytes": 262144,
+      "encrypted": true,
+      "plain_SHA256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+      "stored_SHA256": "3402a6c99c5505338dda356e992e23e82c973c155f7fa9105fde93091feb09c6",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 35,
+      "name": "ipu_code",
+      "bytes": 65536,
+      "encrypted": true,
+      "plain_SHA256": "c8958782feff19752e0b81122b79f742d06d102343f08a2101fa4e8b1e2f572c",
+      "stored_SHA256": "b78de2d30c156d44feb56e15c46570ceddf72e32a065171e6cc28ed57326b53f",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 36,
+      "name": "rc_data",
+      "bytes": 262144,
+      "encrypted": true,
+      "plain_SHA256": "736424438c98bbe9fde213cc237c09aff94003fa1b62bf39d80bf7a854eda718",
+      "stored_SHA256": "c026e5164c337fb305db89f59aa0654f0a728374b17e28a5cb89ebe41bc6efb3",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 37,
+      "name": "rc_code",
+      "bytes": 65536,
+      "encrypted": true,
+      "plain_SHA256": "fc306a4463c9784a2f8f7f16f473bacc6f75ae0f49a69357c8d6c2cd805918c2",
+      "stored_SHA256": "41289a7664f015c6ed776d230015d319294284198f12a39b1f0c4203a6a0464e",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 38,
+      "name": "nr_data",
+      "bytes": 262144,
+      "encrypted": true,
+      "plain_SHA256": "e235e38856489970ba0cff0a6128391b7e56aa0f13f65ca06d2f2ce9b96ac76a",
+      "stored_SHA256": "263b94890784886376150019870ec9725b3c7e240abb613e6d72d78672dd102f",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 39,
+      "name": "nr_code",
+      "bytes": 65536,
+      "encrypted": true,
+      "plain_SHA256": "2553aa1d7cc21e0750d81b0c671abbf361acd35d69d96b9d2f6ba47c52c434cf",
+      "stored_SHA256": "4706f2dc44b03fbd37e729381df38600b70a65d039e75ce9a9909435a3e14e1b",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 40,
+      "name": "hm_c_prog",
+      "bytes": 65536,
+      "encrypted": true,
+      "plain_SHA256": "973652c1067005db6386ecb2bb5f3b653586abbdf2202c9ca03fddcc6799a171",
+      "stored_SHA256": "680d13262add695f01926f10c24f8002bf36b3e67f7da6fafaac1242bd44e8e9",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 41,
+      "name": "hm_d_prog",
+      "bytes": 262144,
+      "encrypted": true,
+      "plain_SHA256": "893bf397006e11348c67fd076ace558251f82dd53ad3795fec4adbfbbc30e6b7",
+      "stored_SHA256": "f1f9d3f7668b2e79f9fc3e15cb7f17525b255a61fb1fd5208b1937e5c48e61a5",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 42,
+      "name": "hm_c_ddr",
+      "bytes": 3145728,
+      "encrypted": true,
+      "plain_SHA256": "7eb98ee3d3370053255cf7d2b130c89a7bb55b60cb2e7eabc96cc6e57e692ffb",
+      "stored_SHA256": "7476366f7441da4e83c5c6f82b4a67d4065f124a4ab4522d38dfee78122da0ab",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 43,
+      "name": "hm_d_ddr",
+      "bytes": 524288,
+      "encrypted": true,
+      "plain_SHA256": "3350eab90e27125ac34f45b5cd08fb8d6f04428a3c807d504d593294cc4b5620",
+      "stored_SHA256": "564fd5cb8af2d1ad0fe77ace8f6ab3983fbba5aeeafdd87f174e2dd2c70be351",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 44,
+      "name": "hm_d_nw",
+      "bytes": 4194304,
+      "encrypted": true,
+      "plain_SHA256": "d74e1f38fa7ce7a40ed49e6ffc3fd65bae70ae77eb9d37add2f896abc52897d6",
+      "stored_SHA256": "8a46ed83f7c0736246dfbcdd4ab2888f2d4705809d99a6e45c798c46b4062910",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 45,
+      "name": "hm_d_nw_sng",
+      "bytes": 4194304,
+      "encrypted": true,
+      "plain_SHA256": "b510989f1e12fd1e6a2efbc5306b125289cb796c48e5ffefe7e4d4ce26390a50",
+      "stored_SHA256": "31fb68fe44dcbe5c440e66f61bab949927a30213111d3104e9522f82c2f182dd",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 46,
+      "name": "hr_c_prog",
+      "bytes": 65536,
+      "encrypted": true,
+      "plain_SHA256": "4af910e93a5546810f609731b4bb193d55e5682aa718271a199c375c293086b6",
+      "stored_SHA256": "25f1abec8681fd55091c0836b626a6d06dec6202558ca541ad49b04788ae9918",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 47,
+      "name": "hr_d_prog",
+      "bytes": 262144,
+      "encrypted": true,
+      "plain_SHA256": "814c41d1f989c0919ff6c9b64e526581da9f891d2bbab69a214e53b479cbc3b0",
+      "stored_SHA256": "06296ca6014431a35f031978719ab43dbcdfc820a4df3d8dfd2fdc7b1506fba8",
+      "directory_and_stored_bytes_identical": true
+    },
+    {
+      "index": 48,
+      "name": "hr_c_ddr",
+      "bytes": 262144,
+      "encrypted": true,
+      "plain_SHA256": "0160d81a9bf5d18326f438c26b08f659612b440abb24e7159a685cef53f02000",
+      "stored_SHA256": "225264f3cc9a42983f50e425836491f8de4b83296266f1523de31fcbb915acb3",
+      "directory_and_stored_bytes_identical": true
+    }
+  ],
+  "modified_update_acceptance_established": false,
+  "camera_accessed": false
+}

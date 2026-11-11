@@ -1,0 +1,39 @@
+{
+  "scope": "mathematical G9 release-directory authentication; not hardware acceptance",
+  "algorithm": "ECDSA P-256 / SHA-256; raw coordinates, r, s and digest integer little endian",
+  "input_BIN_SHA256": "9316958735c19fa0a04415c75faf97edff9be042a42c115ac1622d6c6379e7c3",
+  "public_key": {
+    "component": "program",
+    "component_offset": "0x887e62",
+    "CPU_address": "0x6927e62",
+    "bytes": 64,
+    "SHA256": "3586201218ceed68666470175aea0f6011a22c0be265cff6aa5de7012d81d1a3",
+    "profile_CPU_address": "0x6927ea4"
+  },
+  "directory": {
+    "start": "0x2a0",
+    "end_exclusive": "0x1488",
+    "bytes": 4584,
+    "component_count": 49,
+    "SHA256": "c4292299398a8c9192d2e0991f36822feb62ec30f3016638cbf147a6a31b2a6b"
+  },
+  "signature": {
+    "offset": "0x220",
+    "bytes": 64,
+    "SHA256": "c073c46ea9f91ad6a5e42fb79aab5227c9885d25e26c95ec84b2691c2128b5c8"
+  },
+  "independent_math_valid": true,
+  "controls": {
+    "changed_directory_hash_rejected": true,
+    "changed_signature_rejected": true,
+    "wrong_hash_byte_order_rejected": true
+  },
+  "modified_update_acceptance_established": false,
+  "camera_accessed": false,
+  "OpenSSL": {
+    "version": "OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)",
+    "valid": true,
+    "changed_hash_rejected": true,
+    "changed_signature_rejected": true
+  }
+}

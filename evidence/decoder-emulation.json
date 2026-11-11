@@ -1,0 +1,1108 @@
+{
+  "scope": "native in-memory update decoder; not installation/boot or physical camera",
+  "input_BIN_SHA256": "9316958735c19fa0a04415c75faf97edff9be042a42c115ac1622d6c6379e7c3",
+  "CPU": "cortex-a7",
+  "VFP_NEON_enabled": true,
+  "cases": [
+    {
+      "case": "original_signed_release",
+      "guest_input_bytes": 81952256,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x0",
+      "native_return": "0x0",
+      "native_success": true,
+      "expected_success": true,
+      "all_decoded_hashes_match": true,
+      "native_visits": {
+        "progress": 863,
+        "directory_SHA256": 1,
+        "SHA256_finalize": 50,
+        "ECDSA": 1
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.0,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x0",
+          "seconds": 75.203,
+          "instruction_chunks": 69
+        }
+      ],
+      "components": [
+        {
+          "index": 0,
+          "name": "loader1",
+          "bytes": 4096,
+          "SHA256": "4913f493636ed435d185ca3e5bea7a49eec28195606c99845d38ec68d91ccc5b",
+          "matches_directory": true
+        },
+        {
+          "index": 1,
+          "name": "loader2",
+          "bytes": 22528,
+          "SHA256": "12dc31cd77ac3f49bf04eca1265e67429dd992377d2ae5e4aa307c61060828f7",
+          "matches_directory": true
+        },
+        {
+          "index": 2,
+          "name": "loader3",
+          "bytes": 49152,
+          "SHA256": "be158aec37e74a3d528304f583eea42144bcc0365a8ef7a7f76ce811d9950f95",
+          "matches_directory": true
+        },
+        {
+          "index": 3,
+          "name": "program",
+          "bytes": 11534336,
+          "SHA256": "76e83497c7ae11d9b1e1fe56a3bf11be6931709667b454503e272d5e4f8dd324",
+          "matches_directory": true
+        },
+        {
+          "index": 4,
+          "name": "storage",
+          "bytes": 0,
+          "SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "matches_directory": true
+        },
+        {
+          "index": 5,
+          "name": "postboot1",
+          "bytes": 4718592,
+          "SHA256": "ed4415ed268030e244bf357ec3c3d9e51d47fe91b89e02c975a07f57fbd3f969",
+          "matches_directory": true
+        },
+        {
+          "index": 6,
+          "name": "postboot2",
+          "bytes": 7602176,
+          "SHA256": "f275779294a4c62c8336a82c98c7ba00929500a163d5c4a06eba7e9136419f2c",
+          "matches_directory": true
+        },
+        {
+          "index": 7,
+          "name": "postboot3",
+          "bytes": 131072,
+          "SHA256": "3f9051b4d5a8687214d856cd7b7d00a7890da3d73af581455ac2133381c5eabf",
+          "matches_directory": true
+        },
+        {
+          "index": 8,
+          "name": "postboot4",
+          "bytes": 131072,
+          "SHA256": "a2d1ef6c5b7f70fdac663a4814e83fd5c321a2713500eef51e8435d34d56befe",
+          "matches_directory": true
+        },
+        {
+          "index": 9,
+          "name": "postboot5",
+          "bytes": 786432,
+          "SHA256": "1a8eb34503ea1971d3a60c5aa2f7297a1e1bcc96245e085fbcf066dbdf24925b",
+          "matches_directory": true
+        },
+        {
+          "index": 10,
+          "name": "dram_sleep",
+          "bytes": 6144,
+          "SHA256": "f5c3758092430b333d346dda8378bc2977a930b22df35372b68ba37c9e2b1c18",
+          "matches_directory": true
+        },
+        {
+          "index": 11,
+          "name": "eep_ow_a",
+          "bytes": 131072,
+          "SHA256": "d7bbfc3cabca31995be05781d9eaf66fcef544e6a82e475af58d89deafbb2d69",
+          "matches_directory": true
+        },
+        {
+          "index": 12,
+          "name": "eep_ow_b",
+          "bytes": 131072,
+          "SHA256": "d7bbfc3cabca31995be05781d9eaf66fcef544e6a82e475af58d89deafbb2d69",
+          "matches_directory": true
+        },
+        {
+          "index": 13,
+          "name": "eep_adj",
+          "bytes": 131072,
+          "SHA256": "77af98fb47e9ee8d3df997e3709b0ea1ff0c2c496069efc73d576942f711bb6d",
+          "matches_directory": true
+        },
+        {
+          "index": 14,
+          "name": "eep_fix",
+          "bytes": 131072,
+          "SHA256": "b562055108539ff80f6e6294e084cfc97b347205edf342e728ec6f12bee525fa",
+          "matches_directory": true
+        },
+        {
+          "index": 15,
+          "name": "music",
+          "bytes": 3538944,
+          "SHA256": "5dcc34ae10f9d7be2150752d7fbf4e7bae58d585ea3b3eeff93e985cf557c723",
+          "matches_directory": true
+        },
+        {
+          "index": 16,
+          "name": "osdover",
+          "bytes": 8912896,
+          "SHA256": "4e5cb123e1e41a9cd3a45b573f689e07c6e736ce2e781b04e7cee5ff3b3d56bc",
+          "matches_directory": true
+        },
+        {
+          "index": 17,
+          "name": "osddata",
+          "bytes": 9699328,
+          "SHA256": "7b7d362e928efc9a27a661e8e0963a5ef8a6d0da16d0ae2ae0556ea7006d4edf",
+          "matches_directory": true
+        },
+        {
+          "index": 18,
+          "name": "koutei_kao",
+          "bytes": 114688,
+          "SHA256": "0fb19aef2e26fbb568abce93c300cb41b2754c6e309726c880fd11c2a1f7776d",
+          "matches_directory": true
+        },
+        {
+          "index": 19,
+          "name": "avchd_info",
+          "bytes": 16384,
+          "SHA256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+          "matches_directory": true
+        },
+        {
+          "index": 20,
+          "name": "eep_net_a",
+          "bytes": 131072,
+          "SHA256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+          "matches_directory": true
+        },
+        {
+          "index": 21,
+          "name": "eep_net_b",
+          "bytes": 131072,
+          "SHA256": "b5a41c3758763bbec72769fab4a2533bf2db0b6312d93d25a695f9e4b9e02260",
+          "matches_directory": true
+        },
+        {
+          "index": 22,
+          "name": "eep_act_a",
+          "bytes": 2048,
+          "SHA256": "59aa79d1fdaa9ed58e3eb53b3bad24ca7301ad21fd2f967af4ec8a7c518ecf4a",
+          "matches_directory": true
+        },
+        {
+          "index": 23,
+          "name": "eep_act_b",
+          "bytes": 2048,
+          "SHA256": "59aa79d1fdaa9ed58e3eb53b3bad24ca7301ad21fd2f967af4ec8a7c518ecf4a",
+          "matches_directory": true
+        },
+        {
+          "index": 24,
+          "name": "zboot",
+          "bytes": 2048,
+          "SHA256": "bee20cb8a85d855329a31b5612a3760fd035dd502f26472704fd91beb162ad8a",
+          "matches_directory": true
+        },
+        {
+          "index": 25,
+          "name": "dtb",
+          "bytes": 4096,
+          "SHA256": "01f4d1a19a2fc4a42b7638efd5bcfb892ddf3eb1e9a3fbad3b1168f3e939361a",
+          "matches_directory": true
+        },
+        {
+          "index": 26,
+          "name": "zimage",
+          "bytes": 2621440,
+          "SHA256": "011f69116a7a60d3091657c030808668d202d6ff744b022a7d124b8cb2998fd1",
+          "matches_directory": true
+        },
+        {
+          "index": 27,
+          "name": "rootfs1",
+          "bytes": 4194304,
+          "SHA256": "a29410142a503df4487f0a0be5c41fd0228bf0be915a2fa20c71b0ef76db0354",
+          "matches_directory": true
+        },
+        {
+          "index": 28,
+          "name": "rootfs2",
+          "bytes": 12582912,
+          "SHA256": "eb662b6162c07bd5122dcb5e81fd8b0b3837e58d8e7e581ea9d95d4cca9e92a0",
+          "matches_directory": true
+        },
+        {
+          "index": 29,
+          "name": "apu0_data_i",
+          "bytes": 131072,
+          "SHA256": "6aca25d04ab5d9dc530b98cf1ddd41941c7ae4ed396b803c2e874a5bdb391691",
+          "matches_directory": true
+        },
+        {
+          "index": 30,
+          "name": "apu0_data_e",
+          "bytes": 131072,
+          "SHA256": "28f8fd279d5eefc35dea4bba2277af3dfb632af3e1853dd0991b546a822b2285",
+          "matches_directory": true
+        },
+        {
+          "index": 31,
+          "name": "apu0_code_i",
+          "bytes": 65536,
+          "SHA256": "19a400e55d8c6ccde637eff4299999ee79a66521301b8fdf276a75d8efcf610d",
+          "matches_directory": true
+        },
+        {
+          "index": 32,
+          "name": "apu0_code_e",
+          "bytes": 65536,
+          "SHA256": "71189f7fb6aed638640078fba3a35fda6c39c8962e74dcc75935aac948da9063",
+          "matches_directory": true
+        },
+        {
+          "index": 33,
+          "name": "usbcharge",
+          "bytes": 131072,
+          "SHA256": "89c6d82027f8ff8a9305b22dbb25491b2d94a540331a01e8cda17b5c0b558a78",
+          "matches_directory": true
+        },
+        {
+          "index": 34,
+          "name": "ipu_data",
+          "bytes": 262144,
+          "SHA256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+          "matches_directory": true
+        },
+        {
+          "index": 35,
+          "name": "ipu_code",
+          "bytes": 65536,
+          "SHA256": "c8958782feff19752e0b81122b79f742d06d102343f08a2101fa4e8b1e2f572c",
+          "matches_directory": true
+        },
+        {
+          "index": 36,
+          "name": "rc_data",
+          "bytes": 262144,
+          "SHA256": "736424438c98bbe9fde213cc237c09aff94003fa1b62bf39d80bf7a854eda718",
+          "matches_directory": true
+        },
+        {
+          "index": 37,
+          "name": "rc_code",
+          "bytes": 65536,
+          "SHA256": "fc306a4463c9784a2f8f7f16f473bacc6f75ae0f49a69357c8d6c2cd805918c2",
+          "matches_directory": true
+        },
+        {
+          "index": 38,
+          "name": "nr_data",
+          "bytes": 262144,
+          "SHA256": "e235e38856489970ba0cff0a6128391b7e56aa0f13f65ca06d2f2ce9b96ac76a",
+          "matches_directory": true
+        },
+        {
+          "index": 39,
+          "name": "nr_code",
+          "bytes": 65536,
+          "SHA256": "2553aa1d7cc21e0750d81b0c671abbf361acd35d69d96b9d2f6ba47c52c434cf",
+          "matches_directory": true
+        },
+        {
+          "index": 40,
+          "name": "hm_c_prog",
+          "bytes": 65536,
+          "SHA256": "973652c1067005db6386ecb2bb5f3b653586abbdf2202c9ca03fddcc6799a171",
+          "matches_directory": true
+        },
+        {
+          "index": 41,
+          "name": "hm_d_prog",
+          "bytes": 262144,
+          "SHA256": "893bf397006e11348c67fd076ace558251f82dd53ad3795fec4adbfbbc30e6b7",
+          "matches_directory": true
+        },
+        {
+          "index": 42,
+          "name": "hm_c_ddr",
+          "bytes": 3145728,
+          "SHA256": "7eb98ee3d3370053255cf7d2b130c89a7bb55b60cb2e7eabc96cc6e57e692ffb",
+          "matches_directory": true
+        },
+        {
+          "index": 43,
+          "name": "hm_d_ddr",
+          "bytes": 524288,
+          "SHA256": "3350eab90e27125ac34f45b5cd08fb8d6f04428a3c807d504d593294cc4b5620",
+          "matches_directory": true
+        },
+        {
+          "index": 44,
+          "name": "hm_d_nw",
+          "bytes": 4194304,
+          "SHA256": "d74e1f38fa7ce7a40ed49e6ffc3fd65bae70ae77eb9d37add2f896abc52897d6",
+          "matches_directory": true
+        },
+        {
+          "index": 45,
+          "name": "hm_d_nw_sng",
+          "bytes": 4194304,
+          "SHA256": "b510989f1e12fd1e6a2efbc5306b125289cb796c48e5ffefe7e4d4ce26390a50",
+          "matches_directory": true
+        },
+        {
+          "index": 46,
+          "name": "hr_c_prog",
+          "bytes": 65536,
+          "SHA256": "4af910e93a5546810f609731b4bb193d55e5682aa718271a199c375c293086b6",
+          "matches_directory": true
+        },
+        {
+          "index": 47,
+          "name": "hr_d_prog",
+          "bytes": 262144,
+          "SHA256": "814c41d1f989c0919ff6c9b64e526581da9f891d2bbab69a214e53b479cbc3b0",
+          "matches_directory": true
+        },
+        {
+          "index": 48,
+          "name": "hr_c_ddr",
+          "bytes": 262144,
+          "SHA256": "0160d81a9bf5d18326f438c26b08f659612b440abb24e7159a685cef53f02000",
+          "matches_directory": true
+        }
+      ],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "wrong_outer_magic",
+      "guest_input_bytes": 81952256,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x80000064",
+      "native_return": "0x80000064",
+      "native_success": false,
+      "expected_success": false,
+      "all_decoded_hashes_match": null,
+      "native_visits": {},
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x80000064",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        }
+      ],
+      "components": [],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "truncated_input",
+      "guest_input_bytes": 81952255,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x8000000b",
+      "native_return": "0x8000000b",
+      "native_success": false,
+      "expected_success": false,
+      "all_decoded_hashes_match": null,
+      "native_visits": {},
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x8000000b",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        }
+      ],
+      "components": [],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "bad_outer_CRC",
+      "guest_input_bytes": 81952256,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x0",
+      "native_return": "0x80000064",
+      "native_success": false,
+      "expected_success": false,
+      "all_decoded_hashes_match": null,
+      "native_visits": {
+        "progress": 101
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.0,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x80000064",
+          "seconds": 5.109,
+          "instruction_chunks": 6
+        }
+      ],
+      "components": [],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "bad_signature_repaired_CRC",
+      "guest_input_bytes": 81952256,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x0",
+      "native_return": "0x80000066",
+      "native_success": false,
+      "expected_success": false,
+      "all_decoded_hashes_match": null,
+      "native_visits": {
+        "progress": 101,
+        "directory_SHA256": 1,
+        "SHA256_finalize": 1,
+        "ECDSA": 1
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.0,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x80000066",
+          "seconds": 5.375,
+          "instruction_chunks": 6
+        }
+      ],
+      "components": [],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "changed_signed_component_hash_repaired_CRC",
+      "guest_input_bytes": 81952256,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x0",
+      "native_return": "0x80000066",
+      "native_success": false,
+      "expected_success": false,
+      "all_decoded_hashes_match": null,
+      "native_visits": {
+        "progress": 101,
+        "directory_SHA256": 1,
+        "SHA256_finalize": 1,
+        "ECDSA": 1
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.0,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x80000066",
+          "seconds": 5.36,
+          "instruction_chunks": 6
+        }
+      ],
+      "components": [],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "bad_payload_repaired_CRC",
+      "guest_input_bytes": 81952256,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x0",
+      "native_return": "0x80000066",
+      "native_success": false,
+      "expected_success": false,
+      "all_decoded_hashes_match": null,
+      "native_visits": {
+        "progress": 104,
+        "directory_SHA256": 1,
+        "SHA256_finalize": 2,
+        "ECDSA": 1
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x80000066",
+          "seconds": 5.359,
+          "instruction_chunks": 6
+        }
+      ],
+      "components": [],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "mismatched_repeated_header",
+      "guest_input_bytes": 81952256,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x0",
+      "native_return": "0x80000064",
+      "native_success": false,
+      "expected_success": false,
+      "all_decoded_hashes_match": null,
+      "native_visits": {
+        "progress": 101
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x80000064",
+          "seconds": 5.093,
+          "instruction_chunks": 6
+        }
+      ],
+      "components": [],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "zero_marker_default_policy",
+      "guest_input_bytes": 81952256,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x0",
+      "native_return": "0x80000065",
+      "native_success": false,
+      "expected_success": false,
+      "all_decoded_hashes_match": null,
+      "native_visits": {
+        "progress": 101
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.0,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x80000065",
+          "seconds": 5.172,
+          "instruction_chunks": 6
+        }
+      ],
+      "components": [],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "small_unsigned_default_denied",
+      "guest_input_bytes": 9728,
+      "unsigned_context_allowance_fixture": false,
+      "native_header_return": "0x0",
+      "native_return": "0x80000065",
+      "native_success": false,
+      "expected_success": false,
+      "all_decoded_hashes_match": null,
+      "native_visits": {
+        "progress": 101
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.0,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x80000065",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        }
+      ],
+      "components": [],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "small_unsigned_allowance_fixture",
+      "guest_input_bytes": 9728,
+      "unsigned_context_allowance_fixture": true,
+      "native_header_return": "0x0",
+      "native_return": "0x0",
+      "native_success": true,
+      "expected_success": true,
+      "all_decoded_hashes_match": true,
+      "native_visits": {
+        "progress": 105
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.0,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        }
+      ],
+      "components": [
+        {
+          "index": 0,
+          "name": "loader1",
+          "bytes": 4096,
+          "SHA256": "4913f493636ed435d185ca3e5bea7a49eec28195606c99845d38ec68d91ccc5b",
+          "matches_directory": true
+        }
+      ],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    },
+    {
+      "case": "small_unsigned_corruption_not_authenticated",
+      "guest_input_bytes": 9728,
+      "unsigned_context_allowance_fixture": true,
+      "native_header_return": "0x0",
+      "native_return": "0x0",
+      "native_success": true,
+      "expected_success": true,
+      "all_decoded_hashes_match": false,
+      "native_visits": {
+        "progress": 105
+      },
+      "native_calls": [
+        {
+          "address": "0x6233344",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623339a",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x623337e",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333b8",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c72",
+          "return_value": "0x0",
+          "seconds": 0.015,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x62333e2",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        },
+        {
+          "address": "0x6233c3e",
+          "return_value": "0x0",
+          "seconds": 0.016,
+          "instruction_chunks": 1
+        }
+      ],
+      "components": [
+        {
+          "index": 0,
+          "name": "loader1",
+          "bytes": 4096,
+          "SHA256": "485b34eb01b3c321136ab027c2a10bf2ca8b437adb8be9dc84faacdce6856d5f",
+          "matches_directory": false
+        }
+      ],
+      "environment_stubs": 0,
+      "unmapped_accesses": 0,
+      "callee_saved_registers_and_SP_preserved": true
+    }
+  ],
+  "all_expected_results_observed": true,
+  "cryptographic_or_decoder_stubs": false,
+  "hardware_memory_mapped": false,
+  "modified_image_exported": false,
+  "camera_accessed": false,
+  "physical_modified_update_acceptance_established": false,
+  "tool_source_SHA256": {
+    "tools/g9_emulator.py": "a7e9fac8086226e851ea1d20f13f600a6b8da7f3f91bae62312ddb4dc087c3e6",
+    "tools/emulate_update_decoder.py": "c3504ea0c4bb015fe7f14dbd50eaee4db0c692de1e178dbeee0a785cb5af8922",
+    "tools/emulate_install_job.py": "eef36aaae865e741ede7f32b1cb1648c3299ed9f15b3082168e85607bb42ef6a",
+    "tools/virtual_flash.py": "bba450c28e438229c992644fc6c9f2895bc53f2295216dd8c6f9482a47121ef5"
+  }
+}

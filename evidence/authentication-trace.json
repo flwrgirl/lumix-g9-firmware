@@ -1,0 +1,40 @@
+{
+  "scope": "Static release-code trace; hardware policy and installation path not fully tested",
+  "program_SHA256": "76e83497c7ae11d9b1e1fe56a3bf11be6931709667b454503e272d5e4f8dd324",
+  "updater_job": "0x0622cda0",
+  "decoder": "0x06233c3e",
+  "decoder_call": "0x0622ceb6",
+  "directory_hash_function": "0x06544600",
+  "directory_hash_call": "0x06233a04",
+  "signature_wrapper": "0x0652633e",
+  "signature_call": "0x06233a1e",
+  "elliptic_curve_verifier": "0x065711be",
+  "profile_linked_address": "0x06927ea4",
+  "initial_copy_descriptor": {
+    "component_offset": "0x100",
+    "source_CPU_address": "0x06a3aa94",
+    "destination_CPU_address": "0x081a0000",
+    "bytes": 216804,
+    "copy_routine": "0x060a00c8"
+  },
+  "policy": {
+    "sampled_RAM_address": "0x081c3444",
+    "release_initializer_offset": "0x009bded8",
+    "initial_byte": 1,
+    "zero_enables_context_allowance": true,
+    "context_allowance_offset": "0x68",
+    "physical_runtime_value_measured_in_this_step": false
+  },
+  "AES_key_copy_corroboration": {
+    "ROM_component_offset": "0x009c8f10",
+    "RAM_address": "0x081ce47c",
+    "matches_verified_release_key": true
+  },
+  "other_verification_gate": {
+    "boot_information_base": "0x06138000",
+    "halfword_offset": "0x1a",
+    "complete_policy_emulated": false
+  },
+  "all_installation_or_boot_paths_traced": false,
+  "camera_accessed": false
+}

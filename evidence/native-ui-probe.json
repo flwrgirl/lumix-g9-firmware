@@ -1,0 +1,235 @@
+{
+  "scope": "native UI-module probes; not a working UI emulator",
+  "module_map": [
+    {
+      "component": "05_postboot1.bin",
+      "storage_source": "0x40000000",
+      "ROM_base": "0x6ba0000",
+      "bytes": 4718592,
+      "descriptor": {
+        "RAM_data_start": "0xa280000",
+        "RAM_data_end": "0xa2fa698",
+        "RAM_BSS_end": "0xa488714",
+        "ROM_data_start": "0x6f09a70",
+        "ROM_data_end": "0x6f84108"
+      }
+    },
+    {
+      "component": "06_postboot2.bin",
+      "storage_source": "0x40480000",
+      "ROM_base": "0x7020000",
+      "bytes": 7602176,
+      "descriptor": {
+        "RAM_data_start": "0xa4d0000",
+        "RAM_data_end": "0xa7deb00",
+        "RAM_BSS_end": "0xafe89b0",
+        "ROM_data_start": "0x741ee84",
+        "ROM_data_end": "0x772d984"
+      }
+    },
+    {
+      "component": "07_postboot3.bin",
+      "storage_source": "0x40bc0000",
+      "ROM_base": "0x7760000",
+      "bytes": 131072,
+      "descriptor": {
+        "RAM_data_start": "0xb000000",
+        "RAM_data_end": "0xb000000",
+        "RAM_BSS_end": "0xb000000",
+        "ROM_data_start": "0x776001c",
+        "ROM_data_end": "0x776001c"
+      }
+    },
+    {
+      "component": "08_postboot4.bin",
+      "storage_source": "0x40be0000",
+      "ROM_base": "0x7780000",
+      "bytes": 131072,
+      "descriptor": {
+        "RAM_data_start": "0xb002000",
+        "RAM_data_end": "0xb002000",
+        "RAM_BSS_end": "0xb002000",
+        "ROM_data_start": "0x778001c",
+        "ROM_data_end": "0x778001c"
+      }
+    },
+    {
+      "component": "09_postboot5.bin",
+      "storage_source": "0x40c00000",
+      "ROM_base": "0x77a0000",
+      "bytes": 786432,
+      "descriptor": {
+        "RAM_data_start": "0xb004000",
+        "RAM_data_end": "0xb00e590",
+        "RAM_BSS_end": "0xb10543c",
+        "ROM_data_start": "0x78361c0",
+        "ROM_data_end": "0x7840750"
+      }
+    }
+  ],
+  "native_font_type_controls": [
+    {
+      "case": "release_font_resource",
+      "entry": "0x06baa33a",
+      "native_return": 0,
+      "expected_return": 0
+    },
+    {
+      "case": "embedded_release_font",
+      "entry": "0x06baa33a",
+      "native_return": 0,
+      "expected_return": 0
+    },
+    {
+      "case": "synthetic_BDF_type_control",
+      "entry": "0x06baa33a",
+      "native_return": 1,
+      "expected_return": 1
+    },
+    {
+      "case": "synthetic_unknown_type_control",
+      "entry": "0x06baa33a",
+      "native_return": 4,
+      "expected_return": 4
+    },
+    {
+      "case": "short_length_control",
+      "entry": "0x06baa33a",
+      "native_return": 4,
+      "expected_return": 4
+    }
+  ],
+  "native_font_type_controls_passed": true,
+  "initialization_attempts": [
+    {
+      "case": "native_font_system_initialization",
+      "entry": "0x6bae078",
+      "stopped": true,
+      "fault": "Native execution failed at 0x659ad50: Invalid memory read (UC_ERR_READ_UNMAPPED); [{'PC': '0x659ad50', 'access': 19, 'address': '0x209c0', 'bytes': 4}]",
+      "invalid_accesses": [
+        {
+          "PC": "0x659ad50",
+          "access": 19,
+          "address": "0x209c0",
+          "bytes": 4
+        }
+      ],
+      "recent_native_basic_blocks": [
+        {
+          "address": "0x6bae078",
+          "bytes": 16
+        },
+        {
+          "address": "0x63f725c",
+          "bytes": 32
+        },
+        {
+          "address": "0x63f727c",
+          "bytes": 28
+        },
+        {
+          "address": "0x6bae088",
+          "bytes": 12
+        },
+        {
+          "address": "0x63f7098",
+          "bytes": 8
+        },
+        {
+          "address": "0x63f70a0",
+          "bytes": 8
+        },
+        {
+          "address": "0x63f70a8",
+          "bytes": 8
+        },
+        {
+          "address": "0x63f70b6",
+          "bytes": 4
+        },
+        {
+          "address": "0x659ad34",
+          "bytes": 8
+        },
+        {
+          "address": "0x659ad3c",
+          "bytes": 28
+        }
+      ],
+      "environment_stubs": []
+    },
+    {
+      "case": "first_postboot1_task_candidate",
+      "entry": "0x6ba0024",
+      "stopped": true,
+      "fault": "Native execution failed at 0x659ad50: Invalid memory read (UC_ERR_READ_UNMAPPED); [{'PC': '0x659ad50', 'access': 19, 'address': '0x209c0', 'bytes': 4}]",
+      "invalid_accesses": [
+        {
+          "PC": "0x659ad50",
+          "access": 19,
+          "address": "0x209c0",
+          "bytes": 4
+        }
+      ],
+      "recent_native_basic_blocks": [
+        {
+          "address": "0x6ba0024",
+          "bytes": 6
+        },
+        {
+          "address": "0x6ba001c",
+          "bytes": 8
+        },
+        {
+          "address": "0x6c31874",
+          "bytes": 4
+        },
+        {
+          "address": "0x6c38058",
+          "bytes": 2
+        },
+        {
+          "address": "0x6ba002a",
+          "bytes": 10
+        },
+        {
+          "address": "0x6321ab8",
+          "bytes": 10
+        },
+        {
+          "address": "0x6321ac2",
+          "bytes": 8
+        },
+        {
+          "address": "0x6321aca",
+          "bytes": 8
+        },
+        {
+          "address": "0x6321ad8",
+          "bytes": 2
+        },
+        {
+          "address": "0x6321ada",
+          "bytes": 4
+        },
+        {
+          "address": "0x659ad34",
+          "bytes": 8
+        },
+        {
+          "address": "0x659ad3c",
+          "bytes": 28
+        }
+      ],
+      "environment_stubs": []
+    }
+  ],
+  "camera_accessed": false,
+  "OS_runtime_initialized": false,
+  "graphics_hardware_emulated": false,
+  "supervisor_mode_core_zero_fixture": true,
+  "native_input_bridge_connected": false,
+  "original_framebuffer_produced": false,
+  "ROM_images_modified": false,
+  "services_stubbed": false
+}

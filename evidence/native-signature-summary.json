@@ -1,0 +1,42 @@
+{
+  "scope": "isolated recovered ECDSA wrapper; not complete update/install/boot emulation",
+  "program_SHA256": "76e83497c7ae11d9b1e1fe56a3bf11be6931709667b454503e272d5e4f8dd324",
+  "wrapper_CPU_address": "0x0652633e",
+  "unicorn": "2.1.4",
+  "CPU": "cortex-a7",
+  "VFP_NEON_enabled": true,
+  "instruction_budget_per_case": 200000000,
+  "timeout_microseconds_per_case": 5000000,
+  "code_hooks_or_return_stubs": false,
+  "ROM_writable_during_execution": false,
+  "hardware_memory_mapped": false,
+  "cases": [
+    {
+      "case": "original",
+      "returned": true,
+      "return_value": 0,
+      "expected_return_value": 0,
+      "callee_saved_registers_and_SP_preserved": true,
+      "unmapped_memory_accesses": 0
+    },
+    {
+      "case": "changed_component_hash_in_directory",
+      "returned": true,
+      "return_value": 1,
+      "expected_return_value": 1,
+      "callee_saved_registers_and_SP_preserved": true,
+      "unmapped_memory_accesses": 0
+    },
+    {
+      "case": "changed_signature",
+      "returned": true,
+      "return_value": 1,
+      "expected_return_value": 1,
+      "callee_saved_registers_and_SP_preserved": true,
+      "unmapped_memory_accesses": 0
+    }
+  ],
+  "all_controls_passed": true,
+  "camera_accessed": false,
+  "modified_update_acceptance_established": false
+}

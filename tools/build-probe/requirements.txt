@@ -1,0 +1,2 @@
+# Optional emulator for verify_build_probe.py; separate from decoding.
+unicorn==2.1.4

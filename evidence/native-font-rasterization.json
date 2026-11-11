@@ -1,0 +1,37 @@
+{
+  "native_return": 0,
+  "text_control": "DC-G9",
+  "width": 512,
+  "height": 80,
+  "bitmap_SHA256": "04742939af3dc7a27b2abb76a6082c518b1ccab22e54e044c0c78c3f3936aa47",
+  "nonzero_pixels": 321,
+  "maximum_gray_value": 15,
+  "boundary_canaries": {
+    "SRAM_suffix": true,
+    "bitmap_suffix": true,
+    "font_workspace_prefix": true,
+    "font_workspace_suffix": true
+  },
+  "native_lock_observations": [
+    {
+      "native_return": "0xffffffd6",
+      "meaning": "OS synchronization remains uninitialized"
+    }
+  ],
+  "services_stubbed": false,
+  "camera_accessed": false,
+  "camera_menu_running": false,
+  "fixture_RAM_model": "Flat fixture RAM; no camera hardware model",
+  "native_presentation": {
+    "controller": "VersatilePB PL110 presentation adapter",
+    "width": 512,
+    "height": 80,
+    "camera_LCD_controller_emulated": false
+  },
+  "native_display_pixel_equality": true,
+  "engine": "QEMU",
+  "scope": "Original G9 text rasterization control; not a running camera menu",
+  "strict_engine_raw_SHA256": "04742939af3dc7a27b2abb76a6082c518b1ccab22e54e044c0c78c3f3936aa47",
+  "strict_and_QEMU_pixels_identical": true,
+  "native_window_visually_verified": false
+}
